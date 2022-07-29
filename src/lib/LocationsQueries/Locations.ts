@@ -23,7 +23,3 @@ async function getLocations(): Promise<Location[]>{
 
 	return data.locations
 }
-
-const a = await getLocations()
-
-console.log(a)
