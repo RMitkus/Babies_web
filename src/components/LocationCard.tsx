@@ -87,6 +87,7 @@ const LocationCard: NextPage<ILocationCardProps> = ({ location }) => {
 							display: wc ? 'inline-flex' : 'none',
 						}}
 					/>
+
 					<Button href={`/location/${name}`} >Daugiau</Button>
 				</CardActions>
 			</Card>
