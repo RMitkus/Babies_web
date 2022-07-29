@@ -23,3 +23,5 @@ async function getLocations(): Promise<Location[]>{
 
 	return data.locations
 }
+
+export default getLocations
