@@ -7,7 +7,6 @@ const Home: NextPage = ( ) => {
 			<Head>
 				<title>Mažylių namai</title>
 				<meta name="description" content="Kūdikių vystymo vietos" />
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
 			<main>

@@ -9,6 +9,7 @@ import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
+import Link from 'next/link'
 import * as React from 'react'
 
 type Page = {
@@ -111,9 +112,9 @@ const NavBar = () => {
 							{pages.map((page) => (
 								<MenuItem key={page.name} onClick={handleCloseNavMenu}>
 									<Typography textAlign="center">
-										<Button href={`${page.href}`}>
+										<Link href={`${page.href}`}>
 											{page.name}
-										</Button>
+										</Link>
 									</Typography>
 								</MenuItem>
 							))}
@@ -129,7 +130,6 @@ const NavBar = () => {
 					}}>
 						{pages.map((page) => (
 							<Button
-								href={`${page.href}`}
 								key={page.name}
 								onClick={handleCloseNavMenu}
 								sx={{
@@ -138,7 +138,9 @@ const NavBar = () => {
 									display: 'block'
 								}}
 							>
-								{page.name}
+								<Link href={`${page.href}`}>
+									{page.name}
+								</Link>
 							</Button>
 						))}
 					</Box>
