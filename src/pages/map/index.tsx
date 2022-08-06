@@ -9,7 +9,7 @@ import {
 
 const containerStyle = {
 	width: '1000px',
-	height: '1000px'
+	height: 'auto'
 }
 
 const center = {
@@ -57,7 +57,7 @@ const Map: NextPage = () => {
 						{ /* Child components, such as markers, info windows, etc. */ }
 						<></>
 					</GoogleMap>
-				) : <></>}
+				) : <>No map</>}
 			</div>
 		</>
 	)
